@@ -17,7 +17,6 @@ import com.example.carinfo.ui.viewmodel.LoginViewModelFactory
 
 @Composable
 fun LoginScreen(navController: NavHostController, context: Context) {
-    // Инициализация базы данных с использованием переданного контекста
     val database = AppDatabase.getDatabase(context)
     val viewModel: LoginViewModel = viewModel(factory = LoginViewModelFactory(database))
 
